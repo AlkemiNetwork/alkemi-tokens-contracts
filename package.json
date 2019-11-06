@@ -1,0 +1,34 @@
+{
+  "name": "alkemi-tokens-contracts",
+  "version": "1.0.0",
+  "description": "Ethereum smart contracts for Alkemi protocol ERC20 tokens",
+  "dependencies": {
+    "@openzeppelin/cli": "^2.5.3",
+    "@openzeppelin/contracts-ethereum-package": "^2.3.0",
+    "@openzeppelin/upgrades": "^2.5.3",
+    "truffle": "^5.0.37"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.3",
+    "bignumber.js": "^9.0.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^3.0.0",
+    "ganache-cli": "^6.7.0",
+    "prettier": "^1.18.2",
+    "prettier-plugin-solidity": "^1.0.0-alpha.34"
+  },
+  "scripts": {
+    "add-contract": "openzeppelin add",
+    "compile": "openzeppelin compile",
+    "deploy": "truffle deploy",
+    "test": "ganache-cli --port 8545 > /dev/null & sleep 5 && truffle test",
+    "lint": "npm run prettier",
+    "prettier": "prettier --write **/*.sol"
+  },
+  "keywords": [
+    "Alkemi"
+  ],
+  "author": "Haythem Sellami <haythem@alkemi.ai>",
+  "license": "ISC"
+}
