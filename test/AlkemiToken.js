@@ -21,7 +21,7 @@ require('chai')
 contract('Alkemi Token', ([contractOwner, participant1, participant2, participant3, participant4, participant5, random]) => {
 
   const name = "Alkemi Token";
-  const symbol = "ALT";
+  const symbol = "ALK";
   const decimals = 18;
 
   let alkemiToken;
