@@ -13,7 +13,7 @@ contract AlkemiPrime is Initializable, ERC20Detailed, ERC20Mintable, ERC20Burnab
   }
 
   // Non transferable token
-  function tranzsfer(address to, uint256 value) public returns (bool) {
+  function transfer(address to, uint256 value) public returns (bool) {
     return false;
   }
 
