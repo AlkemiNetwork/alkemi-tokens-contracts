@@ -31,7 +31,9 @@
     "test:alkemi-token": "ganache-cli --port 8545 > /dev/null & sleep 5 && truffle test ./test/AlkemiToken.js",
     "test:alkemi-prime": "ganache-cli --port 8545 > /dev/null & sleep 5 && truffle test ./test/AlkemiPrime.js",
     "coverage": "npx solidity-coverage",
-    "script:ganache-cli": "./scripts/ganache-cli.sh"
+    "script:ganache-cli": "TRUFFLE_TEST=true ./scripts/ganache-cli.sh",
+    "ganache-ci": "ganache-cli --port 8545 > /dev/null &",
+    "test-ci": "truffle test"
   },
   "keywords": [
     "Alkemi"
