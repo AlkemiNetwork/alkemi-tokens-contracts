@@ -36,7 +36,9 @@
     "test-ci": "truffle test"
   },
   "keywords": [
-    "Alkemi"
+    "Alkemi",
+    "Tokens",
+    "ERC20"
   ],
   "author": "Haythem Sellami <haythem@alkemi.ai>",
   "license": "ISC"
