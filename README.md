@@ -1,4 +1,4 @@
-# Alkemi Protocol ERC20 Tokens
+# Alkemi Protocol ERC20 Tokens [![Build Status](https://travis-ci.com/project-alkemi/alkemi-tokens-contracts.svg?branch=master)](https://travis-ci.com/project-alkemi/alkemi-tokens-contracts)
 
 ## Local development chain
 
