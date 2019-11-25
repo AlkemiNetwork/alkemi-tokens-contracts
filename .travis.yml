@@ -1,0 +1,19 @@
+sudo: required
+language: node_js
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
+node_js:
+  - '11.0.0'
+env:
+  - TASK=lint
+  - TASK=test-ci
+before_script:
+  - testrpc > /dev/null &
+  - sleep 5
+script:
+  - travis_wait 60 npm run $TASK
+#after_success:
+#  - ./node_modules/.bin/lcov-result-merger 'apps/*/coverage/lcov.info' | ./node_modules/.bin/coveralls
