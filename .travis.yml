@@ -11,7 +11,7 @@ env:
   - TASK=lint
   - TASK=test-ci
 before_script:
-  - testrpc > /dev/null &
+  - npm run ganache-ci
   - sleep 5
 script:
   - travis_wait 60 npm run $TASK
