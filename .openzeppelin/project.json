@@ -5,14 +5,19 @@
     "AlkemiToken": "AlkemiToken"
   },
   "dependencies": {
-    "@openzeppelin/contracts-ethereum-package": "^2.3.0"
+    "@openzeppelin/contracts-ethereum-package": "^2.4.0"
   },
   "name": "alkemi-tokens-contracts",
   "version": "1.0.0",
   "compiler": {
-    "manager": "truffle",
+    "manager": "openzeppelin",
     "compilerSettings": {
-      "optimizer": {}
-    }
-  }
+      "optimizer": {
+        "enabled": false,
+        "runs": "200"
+      }
+    },
+    "solcVersion": "0.5.16"
+  },
+  "telemetryOptIn": false
 }
