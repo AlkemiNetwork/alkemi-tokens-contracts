@@ -4,3 +4,4 @@ build/
 dist/
 .openzeppelin/dev*
 .openzeppelin/.session
+.mnemonic
