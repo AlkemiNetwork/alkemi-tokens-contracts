@@ -19,6 +19,8 @@
     "ganache-cli": "^6.7.0",
     "prettier": "^1.18.2",
     "prettier-plugin-solidity": "^1.0.0-alpha.34",
+    "solhint": "^2.3.0",
+    "solhint-plugin-prettier": "0.0.3",
     "solidity-coverage": "^0.6.7"
   },
   "scripts": {
@@ -33,8 +35,8 @@
     "migrate:development": "truffle migrate --network development",
     "migrate:rinkeby": "truffle migrate --network rinkeby",
     "migrate:mainnet": "truffle migrate --network mainnet",
-    "lint": "npm run prettier",
-    "prettier": "prettier --write **/*.sol",
+    "lint": "solhint -f table contracts/**/*.sol",
+    "prettier:contracts": "prettier --write contracts/**/*.sol",
     "test": "npm run compile && npm run link-dependencies && npm run push-project development && truffle test",
     "test:alkemi-token": "npm run compile && npm run link-dependencies && npm run push-project development && truffle test ./test/AlkemiToken.js",
     "test:alkemi-prime": "npm run compile && npm run link-dependencies && npm run push-project development && truffle test ./test/AlkemiPrime.js",
