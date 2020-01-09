@@ -17,6 +17,7 @@
     "chai-bignumber": "^3.0.0",
     "eth-gas-reporter": "^0.2.12",
     "ganache-cli": "^6.7.0",
+    "husky": "^4.0.3",
     "prettier": "^1.18.2",
     "prettier-plugin-solidity": "^1.0.0-alpha.34",
     "solhint": "^2.3.0",
@@ -41,6 +42,11 @@
     "test:alkemi-token": "npm run compile && npm run link-dependencies && npm run push-project development && truffle test ./test/AlkemiToken.js",
     "test:alkemi-prime": "npm run compile && npm run link-dependencies && npm run push-project development && truffle test ./test/AlkemiPrime.js",
     "coverage": "npx solidity-coverage"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run prettier:contracts"
+    }
   },
   "keywords": [
     "Alkemi",
