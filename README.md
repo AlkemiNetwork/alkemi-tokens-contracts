@@ -1,4 +1,4 @@
-# Alkemi Protocol ERC20 Tokens [![Build Status](https://travis-ci.com/project-alkemi/alkemi-tokens-contracts.svg?branch=master)](https://travis-ci.com/project-alkemi/alkemi-tokens-contracts)
+# Alkemi Protocol ERC20 Tokens [![Build Status](https://travis-ci.com/project-alkemi/alkemi-tokens-contracts.svg?branch=master)](https://travis-ci.com/project-alkemi/alkemi-tokens-contracts) [![CircleCI](https://circleci.com/gh/project-alkemi/alkemi-tokens-contracts/tree/master.svg?style=svg)](https://circleci.com/gh/project-alkemi/alkemi-tokens-contracts/tree/master)
 
 ## Local development chain
 
