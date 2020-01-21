@@ -35,6 +35,7 @@
     "deploy": "truffle deploy",
     "migrate:development": "truffle migrate --network development",
     "migrate:rinkeby": "truffle migrate --network rinkeby",
+    "migrate:kovan": "truffle migrate --network kovan",
     "migrate:mainnet": "truffle migrate --network mainnet",
     "lint": "solhint -f table contracts/**/*.sol",
     "prettier:contracts": "prettier --write contracts/**/*.sol",
