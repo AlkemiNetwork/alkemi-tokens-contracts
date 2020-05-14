@@ -4,7 +4,7 @@
   "description": "Ethereum smart contracts for Alkemi protocol ERC20 tokens",
   "dependencies": {
     "@openzeppelin/cli": "^2.5.3",
-    "@openzeppelin/contracts-ethereum-package": "^2.4.0",
+    "@openzeppelin/contracts-ethereum-package": "^3.0.0",
     "@openzeppelin/upgrades": "^2.5.3",
     "@truffle/hdwallet-provider": "^1.0.28",
     "truffle": "^5.0.37"
