@@ -22,7 +22,7 @@
     "prettier-plugin-solidity": "^1.0.0-alpha.34",
     "solhint": "^2.3.0",
     "solhint-plugin-prettier": "0.0.3",
-    "solidity-coverage": "^0.6.7"
+    "solidity-coverage": "^0.7.16"
   },
   "scripts": {
     "ganache": "ganache-cli --port 8545",
